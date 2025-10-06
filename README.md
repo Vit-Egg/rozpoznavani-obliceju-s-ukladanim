@@ -22,7 +22,7 @@ Projekt v Pythonu, který pomocí OpenCV rozpoznává obličeje v reálném čas
 ## ⚙️ Instalace
 1. Naklonuj repozitář:
    ```bash
-   git clone https://github.com/UZIVATELSKE_JMENO/rozpoznavani-obliceju-s-ukladanim.git
+   git clone https://github.com/Vit-Egg/rozpoznavani-obliceju-s-ukladanim.git
    cd rozpoznavani-obliceju-s-ukladanim
    ```
 2. Nainstaluj závislosti:
@@ -33,7 +33,11 @@ Projekt v Pythonu, který pomocí OpenCV rozpoznává obličeje v reálném čas
    ```bash
    mkdir known_faces captures
    ```
-4. Přidej do složky `known_faces` fotografie osob, které chceš rozpoznávat (např. `mama.jpeg`, `otec.jpeg` apod.).
+4. Přidej do složky `known_faces` složky osob, které chceš rozpoznávat např. mama/
+                                                                               ├── mama1.jpg
+                                                                               ├── mama2.jpg
+                                                                               └── mama3.jpg
+
 
 ## ▶️ Spuštění
 Skript spusť v terminálu:
@@ -49,9 +53,23 @@ python main_opencv_lbph_with_presence.py
 ## 📁 Struktura složek
 ```
 rozpoznavani-obliceju-s-ukladanim/
-├── known_faces/       # Známé obličeje (např. mama.jpeg, otec.jpeg)
+── known_faces/                     # složka se známými osobami (vstupní data)
+│   ├── mama/
+│   │   ├── mama1.jpg
+│   │   ├── mama2.jpg
+│   │   └── mama3.jpg
+│   │
+│   ├── otec/
+│   │   ├── otec1.jpg
+│   │   ├── otec2.jpg
+│   │   └── otec3.jpg
+│   │
+│   └── sestra/
+│       ├── sestra1.jpg
+│       ├── sestra2.jpg
+│       └── sestra3.jpg
 ├── captures/          # Automaticky uložené snímky
-├── main_opencv_lbph_with_presence.py
+├── main.py
 ├── alert.mp3          # Zvukové upozornění
 └── README.md
 ```
