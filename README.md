@@ -42,7 +42,7 @@ Projekt v Pythonu, který pomocí OpenCV rozpoznává obličeje v reálném čas
 ## ▶️ Spuštění
 Skript spusť v terminálu:
 ```bash
-python main_opencv_lbph_with_presence.py
+python main.py
 ```
 - Stiskni `q` pro ukončení programu.
 - Uprav parametry ve skriptu:
